@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- scroll top button -->
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Menu overlay -->
+    <div id="menuOverlay"></div>
+
+    <!-- header -->
+
+    <header>
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <i class="fa-solid fa-r" style="color: #5adfb5"></i>
+            <a href="index.html">estaurante Bar | La  María</a>
+          </div>
+          <div id="rightSide">
+            <ul id="navLinks">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contactanos</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuToggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home section -->
+
+    <section>
+      <div class="sectionOne">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/Restaur.mp4" type="video/mp4" />
+        </video>
+        <h1>Restaurante Bar La María</h1>
+      </div>
+    </section>
+
+    <!-- menu section -->
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>Nuestro Menu</h2>
+        <div class="menu-items">
+          <button class="category-button" data-category="appetizers">
+            <h3>Entradas</h3>
+            <i class="fas fa-bowl-food"></i>
+          </button>
+          <button class="category-button" data-category="mainCourse">
+            <h3>Platos Fuertes</h3>
+            <i class="fa-solid fa-utensils"></i>
+          </button>
+          <button class="category-button" data-category="dessert">
+            <h3>Extras</h3>
+            <i class="fa-solid fa-cheese"></i>
+          </button>
+          <button class="category-button" data-category="beverage">
+            <h3>Bebidas</h3>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </button>
+          
+        </div>
+
+        <!-- Categories -->
+
+        <div class="menu-category active" data-category="appetizers">
+          <h3>Entradas</h3>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Ceviche de Camarones - <span>$30.000</span></li>
+              <p>Rico ceviche de camarones, marinado en "Leche de tigre de coco" eneldo, ají dulce, cebolla roja, cilantro y maíz tostado.</p>
+              <img src="assets/CevicheCamaron.png" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Deditos corvina empanizado - <span>$30.000</span></li>
+              <p>Ricos deditos de corvina empanizados, acompañados con salsa de ajo.</p>
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Sopa de Mariscos - <span>$20.000</span></li>
+              <p>Sopa mix de mariscos con verduras</p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Causa de atún - <span>$20.000</span></li>
+              <p>Rica causa servida con atún, papa criolla, mayonesa de limon, aguacate, cilantro, pimienta, aceite de oliva.</p>
+              <img src="assets/app1.jpg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Ensalada de atún - <span>$20.000</span></li>
+              <p>Variedad de lechuga fresca, tomates, cebolla roja, lomos de atún, aguacate, aceite e oliva, sal, pimienta y limón.</p>
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Causa de Pollo - <span>$20.000</span></li>
+              <p>Servido con pollo desmechado, papa criolla, mayonesa de limón, aguacate, cilantro, pimienta, aceite de oliva.</p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Platano Maduro - <span>$10.000</span></li>
+              <p>Rico platáno chocoano, asado a la brasa y servido con queso rallado y mantequilla.</p>
+              <img src="assets/app1.jpg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Chicharron con Patacones - <span>$25.000</span></li>
+              <p></p>
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Patacones con Queso Rallado - <span>$15.000</span></li>
+              <p></p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Patacones con Ahogado - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/app1.jpg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Chic de Platanos - <span>$20.000</span></li>
+              <p></p>
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Canasticas de Camaron - <span>$40.000</span></li>
+              <p></p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Canasticas de Langostinos - <span>$45.000</span></li>
+              <p></p>
+              <img src="assets/app1.jpg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Queso Apanado - <span>$20.000</span></li>
+              <p>Acompañado de patacones de banano o platano</p>
+              <img src="assets/app2.jpg" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Chicharrón de Pescado - <span>$30.000</span></li>
+              <p>Acompañado de patacon, ensalada y Salsa de Ajo</p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+
+        </div>  
+        
+        <div class="menu-category" data-category="mainCourse">
+          <h3>Comida Ligera</h3>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Alitas de Pollo - <span>$15.000</span></li>
+              <p>Ricas alitas de pollo acompadas de papas fritas y una salsa a elegir entre salsa de mango, salsa BBQ y salsa de guayaba.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Patacón de plátano chocoano y Ropa vieja - <span>$25.000</span></li>
+              <p>Rico patacón de plátano servido con carne de res deshebrada, hogao y aguacate.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Hamburguesa Angus - <span>$25.000</span></li>
+              <p>Rica hamburguesa de 150gr de carne premium, queso americano, tocineta caramelizada en panela y paprika, servido con papas a la francesa y salsa de ajo.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Perro Caliente - <span>$15.000</span></li>
+              <p>Rico perro caliente, pan fresco, salchicha americana, tocineta, queso americano servido con papas a la francesa y salsa de ajo.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Salchipapa Gratinada - <span>$25.000</span></li>
+              <p>Servida con papas a la francesa, tocineta, sachicha premium, queso mozzarella y salsa de ajo.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Sándwich de Atún - <span>$20.000</span></li>
+              <p>Servido en pan de molde, atún, mayonesa de limón, lechuga, tomate, aguacate, papas a la francesa y salsa de ajo.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Club de Sándwich de Pollo - <span>$20.000</span></li>
+              <p>Servido con pan de molde, pechuga, mayonesa, queso mozzarella, aguacate, papas a la francesa y salsa de ajo.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+          </ul>
+
+          <h3>Picadas</h3>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Picada Mixta de Carnes - <span>$45.000</span></li>
+              <p>Rica picada de carne de res, pollo, cerdo, servido con papas a la francesa, salsa de ajo y ensalada de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Picada Típica Chocoana - <span>$45.000</span></li>
+              <p>Rica picada tipica chocoana servida con chicharron, chorizo chocoano, longaniza, patacones, ensalada de la casa, hogao, salsa de ajo y guacamole.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Picada de Marisco - <span>$60.000</span></li>
+              <p>Rica picada mixta de maricoss empanizados, servidos con papas a la francesa, patacones, ensalada de la casa, hogao, guacamole y salsa de ajo.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Pechuga a la plancha - <span>$30.000</span></li>
+              <p>Rica pechuga a la plancha sazonada en hierba chocoana, salsa de ajo, acompañada con papas a la francesa, patacones de platano ó yuca y ensalada de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Solomito de Res o cerdo abierto - <span>$30.000</span></li>
+              <p>Solomito de res abierto, salsa de ajo acompañada con papas a la francesa, patacones de platano ó yuca y ensalada de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Costilla en Salsa BBQ - <span>$30.000</span></li>
+              <p>Costilla de cerdo sazonada en especies chocoanas, salsa de ajo acompañada con papas a la francesa, patacones de platano ó yuca y ensalada de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Chorizo Chocoano - <span>$20.000</span></li>
+              <p>Rico chorizo frito acompañado de patacones de banano chocoano, guacamole, hogao y ensalada de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+          </ul>
+
+          <h3>Comida Chocoana</h3>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Arroz Atollado con Pollo y Chorizo Chocoano - <span>$30.000</span></li>
+              <p>Rico arroz atollado con pollo, chorizo, queso costeño, patacones, servido sobre una hoja de bijao.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Arroz con Longaniza y Queso - <span>$35.000</span></li>
+              <p>Rico arroz con longaniza y queso costeño acompañado con patacon.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Arroz con Camarones del Pacifico - <span>$40.000</span></li>
+              <p>Arroz con camarones salteados en crema de leche de coco y pasta de tomate, patacon y aguacate.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Arroz putiao - <span>$40.000</span></li>
+              <p>Arroz, longaniza, camaron, langostinos, arveja zanahoria, consumé de pescado, poleo, albahaca, cilantro, achiote, sal y pimienta.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Atollado de piangua - <span>$40.000</span></li>
+              <p></p>
+              <img src="assets/main2.jpg" />
+            </div>
+          </ul>
+
+          <h3>Pescados</h3>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Pargo Frito - <span>$0</span></li>
+              <p>Rico pargo frito servido con ensalada de la casa, patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Pargo en salsa de Camarón - <span>$0</span></li>
+              <p>Rico arroz con longaniza y queso costeño acompañado con patacon.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Sierra Frita al Ajo - <span>$0</span></li>
+              <p>Rica sierra frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Cachama Frita - <span>$0</span></li>
+              <p>Rica cachama frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Gualajo Frito - <span>$0</span></li>
+              <p>Rico gualajo frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Robalo Frito - <span>$0</span></li>
+              <p>Rico robalo frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Tilapia Frita - <span>$0</span></li>
+              <p>Rica tilapia frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Beranera Frita - <span>$0</span></li>
+              <p>Rico beranera frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Boricua Frita - <span>$0</span></li>
+              <p>Rico boricua frita servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Liza Frita - <span>$0</span></li>
+              <p>Rica liza frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Corvina Frita - <span>$0</span></li>
+              <p>Rico corvina frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Encocada de Piangua - <span>$55.000</span></li>
+              <p>Rica piangua frita servida con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Langostino Apanado o Al Ajillo - <span>$55.000</span></li>
+              <p>Rico langostino frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Atún Apanado - <span>$35.000</span></li>
+              <p>Rico Atún frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Bocachico Frito - <span>$0</span></li>
+              <p>Rico bocachico frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Cazuela de Marisco - <span>$50.000</span></li>
+              <p>Rica cazuela de marisco con variedad de pescado del pacifico servido con ensalada de la casa acompañada de patacones y salsa de la casa.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Nuddles, Soya Sauce">
+              <li>Jaiba en salda de coco - <span>$55.000</span></li>
+              <p>Rico cangrejo en salsa de coco con arroz blanco, patacon y ensalada de la casa.</p>
+              <img src="assets/main2.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Pasta Cremosa en Sala de Marisco - <span>$40.000</span></li>
+              <p>Rico bocachico frito servido con ensalada de la casa acompalada con patacones y salsa de la casa.</p>
+              <img src="assets/main3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="mainItem" data-ingredients="Cheese, Beef, Tomato, Bread">
+              <li>Salmon en sala de Chontaduro, Borojo ó Coco - <span>$65.000</span></li>
+              <p>Acompañado de patacones y ensalada.</p>
+              <img src="assets/main1.jpg" />
+            </div>
+          </ul>
+
+
+        </div>
+        <div class="menu-category" data-category="dessert">
+          <h3>Acompañamiento Extra</h3>
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Patacones de Plátano - <span>$8.000</span></li>
+              <p>.</p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Ensalada de la Casa - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Pure de Papa Cremoso - <span>$6.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Papas fritas - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Arroz con Coco - <span>$6.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Chorizo - <span>$10.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Arroz Blanco - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Pure de Yuca y Queso - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Patacones de Banano - <span>$6.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Pure de Papa Criolla - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Longaniza - <span>$15.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Salsa de Mariscos - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Queso Costeño - <span>$7.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Tocineta Frita - <span>$7.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Huevo Frito - <span>$2.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Huevos Revueltos - <span>$7.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Queso Mozzarella - <span>$7.000</span></li>
+              <p></p>
+              <img src="assets/dess2.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>Atún en Lomos - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Yuca Frita - <span>$7.000</span></li>
+              <p></p>
+              <img src="assets/dess1.jpg" />
+            </div>
+          </ul>
+
+        </div>
+        <div class="menu-category" data-category="beverage">
+          <h3>Gassatas</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Gassatas de Frutos Rojos - <span>$20.000</span></li>
+              <p>Variedad de frutas rojas marinadas en almíbar, soda, jugo de limón y jugo de cereza.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Gassata de Frutos Verde - <span>$20.000</span></li>
+              <p>Variedad de frutas verdes marinadas en almíbar, soda, jugo de limón y jugo de naranja.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>Soda Limón - <span>$10.000</span></li>
+              <p>Soda y zumo de limón</p>
+              <img src="assets/bev3.jpg" />
+            </div>
+          </ul>
+
+          <h3>Cocteles</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Colada - <span>$20.000</span></li>
+              <p>Ron, piña, crema de coco, cubos de hielo y leche liquida.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Sunrise - <span>$20.000</span></li>
+              <p>Tequila blanco, jugo de naranja, jugo de cereza y cubos de hielo.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>Cosmopolitan - <span>$20.000</span></li>
+              <p>Triple sec, zumo de limón y zumo de cereza.</p>
+              <img src="assets/bev3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Habana Mango - <span>$20.000</span></li>
+              <p>Ron blanco, limón, hierba buena, almíbar, jugo de mango y cubos de hielo.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Habana Maracuyá - <span>$20.000</span></li>
+              <p>Ron Blanco, zumo de limón, hierba buena, almíbar, maracuyá y cubos de hielo.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>Habana - <span>$20.000</span></li>
+              <p>Ron blanco, zumo de limón, gotas amargas, hierba buena, soda y cubos de hielo.</p>
+              <img src="assets/bev3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Daiquiri Fresa - <span>$20.000</span></li>
+              <p>Ron, fresa, almíbar y cubos de hielo.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Margarita - <span>$20.000</span></li>
+              <p>Tequila, zumo de limón, triple sec y cubos de hielo.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>Cuba Libre - <span>$20.000</span></li>
+              <p>Ron, zumo de limón, cubos de hielo, gotas amargas y coca-cola.</p>
+              <img src="assets/bev3.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Habana Special - <span>$20.000</span></li>
+              <p>Ron, jugo de piña, jugo de cereza y cubos de hielo.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Tom Collins - <span>$20.000</span></li>
+              <p>Ginebra, zumo de limón, almíbar, dos de gotas amargas.</p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h3>Sangrias</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Jarra - Sangria Rose - <span>$80.000</span></li>
+              <li>Media - Sangria Rose - <span>$40.000</span></li>
+              <li>Trago - Sangria Rose - <span>$20.000</span></li>
+              <p>Vino Rose, vodka, frutas marinadas, jugo de naranja, triple sec, sprite y jugo de cereza.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Jarra - Sangria Blanca - <span>$80.000</span></li>
+              <li>Media - Sangria Blanca - <span>$40.000</span></li>
+              <li>Trago - Sangria Blanca - <span>$20.000</span></li>
+              <p>Vino Blanco, vodka, frutas marinadas, ron, jugo de naranja, triple sec, sprite y jugo de cereza.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Jarra - Sangria Tinta - <span>$80.000</span></li>
+              <li>Media - Sangria Tinta - <span>$40.000</span></li>
+              <li>Trago - Sangria Tinta - <span>$20.000</span></li>
+              <p>Vino Tinto, vodka, frutas marinadas, ron, jugo de naranja, triple sec, sprite y jugo de cereza.</p>
+              <img src="assets/bev1.jpg" />
+            </div>
+          </ul>
+
+          <h3>Bebidas Alcoholicas</h3>
+          <h5>Aguardiente</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Platino Play - <span>$65.000</span></li>
+              <p></p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Antioqueño Verde - <span>$35.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Ron</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>Caldas 15 Años - <span>$165.000</span></li>
+              <p></p>
+              <img src="assets/bev1.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Caldas 8 Años - <span>$150.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Caldas 5 Años - <span>$100.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Caldas 3 Años - <span>$80.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Caldas Esencial - <span>$65.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Whisky Botella</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Whisky Buchanan's - <span>$0</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Buchanan's Master - <span>$280.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Old Parr - <span>$250.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Glenfiddich - <span>$200.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Grants - <span>$90.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Monkey - <span>$200.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Famous Grouse - <span>$90.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Chivas Regal - <span>$260.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Crema de Whisky Botella</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Cheers - <span>$105.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Baileys - <span>$120.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Tequila</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Tequila Omega - <span>$130.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>            
+          </ul>
+
+          <h5>Cervezas</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Poker - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Aguila - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Aguila Light - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Pilsen - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Cola y Pola - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Club Dorada - <span>$5.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Club Roja - <span>$5.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Club Negra - <span>$5.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Michelob Ultra - <span>$6.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Corona - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Stella Artois - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Budweiser - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Smirnoff Ice - <span>$10.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Becks - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+
+          <h3>Vinos</h3>
+          <h5>Blancos</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Casillero del Diablo - <span>$40.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Lambrusco - <span>$50.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Tintos</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Casillero del Diablo - <span>$40.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Estoril - <span>$40.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Lambrusco - <span>$50.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Rose</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Lambrusco - <span>$50.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Espumoso</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Alteza Blanca - <span>$50.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Alteza Rosa - <span>$50.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Vino J.P. Chenet - <span>$90.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h3>Bebidas Sin Alcohol y Mas</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Gatorade - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Agua - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Gaseosas - <span>$3.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Jugos Naturales en Leche - <span>$8.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Jugos Naturales en Agua - <span>$6.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Limonada Cerezada - <span>$15.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Limonada de Coco - <span>$15.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Malteadas</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Vainilla - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Fresa - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Chocolate - <span>$12.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+          <h5>Bebidas Calientes</h5>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Aromática de Frutas - <span>$2.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Café - <span>$2.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Café con Leche - <span>$4.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Chocolate - <span>$2.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>Agua de Panela - <span>$2.000</span></li>
+              <p></p>
+              <img src="assets/bev2.jpg" />
+            </div>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Contact Start -->
+
+    <section>
+      <div class="contactUs" id="contactUs">
+        <div class="container">
+          <h2>Contactanos</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+                book@example.com
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Whatsapp</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+                +57 3122412513
+              </p>
+            </div>
+          </div>
+          <div class="contactWrapper">
+            <div class="mapLeftSide">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100!2d-76.6410877!3d5.6760417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDAnMzMuNyJOIDc2wrAzOCc0NC4wIlc!5e0!3m2!1ses!2sco!4v1709963471234"
+                frameborder="0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+              <p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=5.6760417,-76.6410877" target="_blank">
+                  Ver en Google Maps
+              </a>
+            </p>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact End -->
+
+    <!-- footer  -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo footer-logo">
+            <i class="fa-solid fa-r" style="color: #5adfb5"></i>
+            <a href="index.html">ESTAURANTE BAR LA MARÍA</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p>Contactanos:</p>
+            <p>Quibdó - Chocó</p>
+            <p>Phone: (+57) 3122412513</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/maha-fathy-40801b1b5/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mahamfathy" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <p>This website created by © Edgar Duvan Lemus Ramos</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/64c17729fa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
